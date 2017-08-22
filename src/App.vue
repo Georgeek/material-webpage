@@ -12,7 +12,15 @@
           <div class="logo-img">
             <div class="logo-img--photo"></div>
           </div>
-          <h3>Мадьяров Егор</h3>
+          <div class="person__data">
+            <h3>Мадьяров Егор</h3>
+            <button class="mdl-button mdl-js-button mdl-button--raised">
+              Резюме
+            </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised">
+              Резюме 1
+            </button>
+          </div>
         </div>
       </div>
       <div class="mdl-layout__header-row mdl-layout--small-screen-only"></div>
@@ -31,6 +39,9 @@
           <a href="" class="mdl-layout__tab">
             <i class="material-icons">receipt</i> <span>Контакты</span>
           </a>
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons">more_vert</i>
+          </button>
         </div>
       </div>
     </header>
@@ -46,10 +57,20 @@
     </div>
 
     <main class="mdl-layout__content">
-      <!-- Colored FAB button -->
-      <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-        <i class="material-icons">add</i>
-      </button>
+      <div class="mdl-card">
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">Title</h2>
+        </div>
+        <div class="mdl-card__supporting-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifendinia...</div>
+        <div class="mdl-card__actions mdl-card--border">
+          <a href="" class="mdl-button mdl-button-colored mdl-js-button mdl-js-ripple-effect">Get Started</a>
+        </div>
+        <div class="mdl-card__menu">
+          <button class="mdl-button mdl-button--icon mdl-js-button mdl-ripple-effect">
+            <i class="material-icons">share</i>
+          </button>
+        </div>
+      </div>
     </main>
   </div>
 </template>
@@ -69,14 +90,15 @@
 <style lang="sass">
   body
     font-family: 'Material Icons', sans, sans serif
+  h3
+    margin: 33px 0 15px
   .mdl-layout__header
     background: url(assets/bg.jpg) center no-repeat
     background-size: cover
+    border-top: 4px solid #303f9f
   .mdl-layout__header-row
     background: rgba(101, 115, 242, .3)
 
-    h3
-      margin-left: 25px
   .mdl-layout__tab-bar-container
     background: rgba(101, 115, 242, .3)
     overflow: visible
@@ -89,14 +111,28 @@
     top: 35px
     right: 20%
     width: auto
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12)
+
+    .mdl-button--icon
+      position: relative
+      top: 10px
+      margin-right: 25px
   
   .person__block
     display: flex
     flex-direction: row
+    z-index: 3
+  .person__data
+    margin-left: 25px
+    .mdl-button
+      margin-right: 15px
+      &--raised
+        background: rgba(255, 255, 255, 0.3)
+        color: white
   .logo-img
     width: 145px
     height: 145px
-    z-index: 3
+    
   .logo-img--photo
     width: 100%
     height: 100%
