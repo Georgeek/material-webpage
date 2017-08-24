@@ -64,50 +64,38 @@
     <main class="mdl-layout__content">
       <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
-          <div class="mdl-grid">
             <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
               <div class="mdl-card__title">
-                <i class="material-icons material-icons--info">public</i>
-                <h5>Title 1n</h5>
+                <div class="mdl-card__title-text">
+                  <i class="material-icons material-icons--info">public</i><h6>Обо мне</h6>
+                </div>
               </div>
-              <div class="mdl-card__supporting-text">Some awesome text</div>
+              <div class="info-block">
+                <h6 class="text--black">Верстальщик, front-end разработчик</h6>
+                <div class="mdl-card__supporting-text">
+                  <ul class="mdl-list">
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        Важная инфомрация 1
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        Важная инфомрация 2
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        Важная инфомрация 3
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mdl-card__supporting-text"> Тут еще какая-то информация ключевая </div>
+              </div>
+              
               <div class="mdl-card__actions mdl-card--border">
-                <a href="" class="mdl-button mdl-button-colored mdl-js-button mdl-js-ripple-effect">Get Started</a>
-              </div>
-              <div class="mdl-card__menu">
-                <button class="mdl-button mdl-button--icon mdl-js-button mdl-ripple-effect">
-                  <i class="material-icons">share</i>
-                </button>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-              <div class="mdl-card__title">
-                <i class="material-icons material-icons--info">public</i>
-                <h5>Title 1n</h5>
-              </div>
-              <div class="mdl-card__supporting-text">Some awesome text</div>
-              <div class="mdl-card__actions mdl-card--border">
-                <a href="" class="mdl-button mdl-button-colored mdl-js-button mdl-js-ripple-effect">Get Started</a>
-              </div>
-              <div class="mdl-card__menu">
-                <button class="mdl-button mdl-button--icon mdl-js-button mdl-ripple-effect">
-                  <i class="material-icons">share</i>
-                </button>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-              <div class="mdl-card__title">
-                <i class="material-icons material-icons--info">public</i>
-                <h5>Title 1n</h5>
-              </div>
-              <div class="mdl-card__supporting-text">Some awesome text</div>
-              <div class="mdl-card__actions mdl-card--border">
-                <a href="" class="mdl-button mdl-button-colored mdl-js-button mdl-js-ripple-effect">Get Started</a>
-              </div>
-              <div class="mdl-card__menu">
-                <button class="mdl-button mdl-button--icon mdl-js-button mdl-ripple-effect">
-                  <i class="material-icons">share</i>
-                </button>
+                <a href="" class="mdl-button mdl-button-colored mdl-js-button mdl-js-ripple-effect">Подробнее</a>
               </div>
             </div>
             <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
@@ -126,30 +114,31 @@
               </div>
             </div>
 
-          </div>
         </div>
         <div class="mdl-cell mdl-cell--8-col">
-          <div class="mdl-grid">
             <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp">
-              <div class="mdl-card__title">
-                <h2 class="mdl-card__title-text">Welcome</h2>
+              <div class="info-block">
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Welcome</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris sagittis pellentesque lacus eleifend lacinia...
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    Get Started
+                  </a>
+                </div>
+                <div class="mdl-card__menu">
+                  <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                    <i class="material-icons">keyboard_arrow_down</i>
+                  </button>
+                </div>
+
               </div>
-              <div class="mdl-card__supporting-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Mauris sagittis pellentesque lacus eleifend lacinia...
-              </div>
-              <div class="mdl-card__actions mdl-card--border">
-                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                  Get Started
-                </a>
-              </div>
-              <div class="mdl-card__menu">
-                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                  <i class="material-icons">keyboard_arrow_down</i>
-                </button>
-              </div>
+
             </div>
-          </div>
         </div>
       </div>
     </main>
@@ -174,6 +163,16 @@
     font-family: 'Roboto', sans-serif
   h3
     margin: 33px 0 15px
+  h6
+    margin: 0
+  .text--black
+    color: black
+  .info-block
+    padding: 0 16px
+  .mdl-card__supporting-text
+    padding: 16px 0
+  .mdl-card__title-text
+    align-items: center
 
   .mdl-card
     margin: 8px auto
@@ -184,7 +183,6 @@
     max-width: 1280px
     &__content
       padding: 21px 21px 0px 21px
-    
     &__header
       background: url(assets/bg.jpg) center no-repeat
       background-size: cover
@@ -244,16 +242,13 @@
     background-size: 150%
     box-shadow: 0px 11px 13px 1px rgba(0,0,0,0.14)
 
-  main
-    background: #fff
-    height: 500vh
+
   .material-icons--info
     border: 7px solid #e0e0e0
     border-radius: 50px
     background: #e0e0e0
     color: white
     position: relative
-    top: 3px
     margin-right: 10px
     font-size: 28px
 
@@ -287,14 +282,8 @@
           box-shadow: none
     .logo-img--photo
       box-shadow: 0px 11px 13px 1px rgba(0,0,0,0.14)
-    main .mdl-grid
-      flex-direction: column
-      align-items: center
-    .mdl-layout__content
-      padding: 21px 0 0 0
-    .mdl-cell--4-col
-      width: calc(100% - 16px)
 
-    
+    .mdl-layout__content
+      padding: 40px 0 0 0
 </style>
 
