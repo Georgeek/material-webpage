@@ -81,43 +81,110 @@
               </div>
             </div>
 
-            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp photo-block">
               <div class="mdl-card__title">
                 <div class="mdl-card__title-text">
-                  <i class="material-icons material-icons--info">public</i><h6>Еще какой-то блок, может фотографии</h6>
+                  <i class="material-icons material-icons--info">camera</i><h6>Фотографии</h6>
                 </div>
               </div>
-              <div class="info-block">
-                <div class="mdl-card__supporting-text text--black">Верстальщик, front-end разработчик</div>
-                <div class="mdl-card__supporting-text">Тут еще какая-то информация ключевая</div>
-                <div class="mdl-card__supporting-text">Тут еще какая-то информация ключевая</div>
-              </div>
-              <div class="mdl-card__actions mdl-card--border">
-                <a href="" class="mdl-button mdl-button-colored mdl-js-button mdl-js-ripple-effect">Подробнее</a>
-              </div>
-            </div>
-        </div>
-
-        <div class="mdl-cell mdl-cell--8-col">
-          <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp">
-              <div class="mdl-card__title topic-1">
-                <div class="mdl-card__title-text">
-                  <i class="material-icons material-icons--info">public</i><h6>Название статьи</h6>
+              <div class="photo-block__gallery">
+                <div class="photo-block__wrap">
+                  <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
                 </div>
-              </div>
-              <div class="mdl-card__media">
-                <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
-              </div>
-              <div class="info-block">
-                <div class="mdl-card__supporting-text text--black">Может теги какие-нибудь</div>
-                <div class="mdl-card__supporting-text">Краткое описание</div>
-                <div class="mdl-card__supporting-text">Тут еще какая-то информация ключевая</div>
+                <div class="photo-block__wrap">
+                  <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+                </div>
+                <div class="photo-block__wrap">
+                  <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+                </div>
+                <div class="photo-block__wrap">
+                  <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+                </div>
+                <div class="photo-block__wrap">
+                  <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+                </div>
+                <div class="photo-block__wrap">
+                  <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+                </div>
+                <div class="photo-block__wrap">
+                  <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+                </div>
+                <div class="photo-block__wrap">
+                  <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+                </div>
+                <div class="photo-block__wrap">
+                  <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+                </div>
               </div>
               <div class="mdl-card__menu">
                 <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
                   <i class="material-icons">keyboard_arrow_down</i>
                 </button>
+              </div>
+            </div>
 
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp photo-block">
+              <div class="mdl-card__title">
+                <div class="mdl-card__title-text">
+                  <i class="material-icons material-icons--info">collections</i><h6>Портфолио??</h6>
+                </div>
+              </div>
+              <div class="photo-block__gallery">
+                <div class="photo-block__wrap">
+                  <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+                </div>
+                <div class="photo-block__wrap">
+                  <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+                </div>
+                <div class="photo-block__wrap">
+                  <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+                </div>
+                <div class="photo-block__wrap">
+                  <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+                </div>
+                <div class="photo-block__wrap">
+                  <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+                </div>
+                <div class="photo-block__wrap">
+                  <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+                </div>
+                <div class="photo-block__wrap">
+                  <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+                </div>
+                <div class="photo-block__wrap">
+                  <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+                </div>
+                <div class="photo-block__wrap">
+                  <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+                </div>
+              </div>
+              <div class="mdl-card__menu">
+                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                  <i class="material-icons">keyboard_arrow_down</i>
+                </button>
+              </div>
+            </div>
+        </div>
+
+        <div class="mdl-cell mdl-cell--7-col">
+          <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--6dp">
+            <div class="mdl-card__title topic-1">
+              <div class="mdl-card__title-text">
+                <i class="material-icons material-icons--info">public</i><h6>Название статьи</h6>
+              </div>
+            </div>
+            <div class="mdl-card__media">
+              <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+            </div>
+            <div class="info-block">
+              <div class="mdl-card__supporting-text text--black">Может теги какие-нибудь</div>
+              <div class="mdl-card__supporting-text">Краткое описание</div>
+              <div class="mdl-card__supporting-text">Тут еще какая-то информация ключевая</div>
+            </div>
+            <div class="mdl-card__menu">
+              <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                <i class="material-icons">keyboard_arrow_down</i>
+              </button>
             </div>
           </div>
         </div>
@@ -147,6 +214,9 @@
     margin: 33px 0 15px
   h6
     margin: 0
+  img
+    width: 100%
+    height: 100%
   .text--black
     color: black
   .info-block
@@ -167,6 +237,9 @@
     padding: 0 0 16px
   .mdl-card__title-text
     align-items: center
+  .mdl-card__actions > a
+    color: #303F9F
+    padding: 0 8px
 
   .mdl-card
     margin: 8px auto
@@ -245,6 +318,30 @@
     position: relative
     margin-right: 10px
     font-size: 28px
+  .photo-block
+    &__gallery
+      display: flex
+      flex-flow: row wrap-reverse
+      padding-left: 2px
+    &__wrap
+      flex: auto
+      width: 110px
+      margin: 0 2px 2px 0
+      img
+        width: 100%
+        height: auto
+    &__image
+      background: url(https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg) no-repeat
+      background-position: center
+      background-size: 200%
+      width: 100%
+      height: auto
+    .mdl-grid
+      padding: 0 0 0 2px
+    .mdl-cell--4-col
+      width: calc(33.3333333333% - 2px)
+      margin: 0 2px 2px 0
+
 
   @media screen and (max-width: 1024px)
     .mdl-layout__header
