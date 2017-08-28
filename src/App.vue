@@ -10,8 +10,8 @@
       <div class="mdl-layout__header-row"></div>
       <div class="mdl-layout__header-row">
         <div class="person__block">
-          <div class="logo-img">
-            <div class="logo-img--photo"></div>
+          <div class="block-img">
+            <div class="block-img--photo block-img--shadow"></div>
           </div>
           <div class="person__data">
             <h3>Мадьяров Егор</h3>
@@ -169,17 +169,47 @@
         <div class="mdl-cell mdl-cell--7-col">
           <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--6dp">
             <div class="mdl-card__title topic-1">
-              <div class="mdl-card__title-text">
-                <i class="material-icons material-icons--info">public</i><h6>Название статьи</h6>
+              <div class="block-img--avatar">
+                <div class="block-img--photo"></div>
               </div>
+              <div class="mdl-card__subtitle-block">
+                <div class="mdl-card__subtitle-text mdl-card__subtitle-text--author">
+                  Мадьяров Егор Тимурович
+                </div>
+                <div class="mdl-card__subtitle-text">
+                  28 августа в 13:49
+                </div>
+              </div>
+              
             </div>
+            <!-- использовать в Блоге на фотографии фоном -->
             <div class="mdl-card__media">
               <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+              <!-- <div class="overlay middle center">
+                <div class="overlay-inside">
+                  <div>
+                    <div class="news-box--title ">Какое-то название</div>
+                    <hr>
+                    <div class="news-box--subtitle">драмматическое описание</div>
+                    <hr>
+                    <div class="news-box--copyright">какое-то авторство</div>
+                  </div>
+                </div>
+              </div> -->
             </div>
+
             <div class="info-block">
-              <div class="mdl-card__supporting-text text--black">Может теги какие-нибудь</div>
-              <div class="mdl-card__supporting-text">Краткое описание</div>
-              <div class="mdl-card__supporting-text">Тут еще какая-то информация ключевая</div>
+              <h4>Какое-то эпическое название</h4>
+              <div class="mdl-card__supporting-text text--black">Краткое описание эпической темы в нескольких предложениях. Да так, чтобы я смог проверить на нескольких строчках мог проверить. Тренирую свой десятипальцевый слепой набор на русской йцукен раскладке. Пальцы пока путаются.</div>
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                Подробнее
+              </a>
+              <div class="mdl-layout-spacer"></div>
+              <i class="material-icons">mode_comment</i>
+              <i class="material-icons">share</i>
+              <i class="material-icons">thumb_up</i>
             </div>
             <div class="mdl-card__menu">
               <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
@@ -212,13 +242,43 @@
     font-family: 'Roboto', sans-serif
   h3
     margin: 33px 0 15px
-  h6
-    margin: 0
+  h6, .mdl-card__subtitle-block
+    margin: 0 0 0 10px
   img
     width: 100%
     height: 100%
   .text--black
     color: black
+  .overlay
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    display: flex
+    color: #fff
+  .middle
+    align-items: center
+  .center
+    text-align: center
+    justify-content: center
+  .overlay-inside
+    margin: 0
+    padding: 0
+  .news-box
+    &--title
+      font-size: 36px
+      line-height: 22px 
+    &--subtitle
+      font-size: 21px
+      line-height: 25px
+    &--copyright
+      margin-top: 10px
+      font-size: 13px
+      line-height: 18px
+
   .info-block
     padding: 0 16px
   .mdl-card__media
@@ -237,12 +297,23 @@
     padding: 0 0 16px
   .mdl-card__title-text
     align-items: center
-  .mdl-card__actions > a
-    color: #303F9F
-    padding: 0 8px
+  .mdl-card__subtitle-text
+    &--author
+      font-weight: 600
+      color: rgba(48, 63, 159,.8)
+      margin-bottom: 5px
+  .mdl-card
+    &__actions
+      display: flex
+      align-items: center
+      a, i
+        color: #303F9F
+        padding: 0 8px
 
   .mdl-card
     margin: 8px auto
+    &__menu i
+        color: rgba(0,0,0,.44)
   .mdl-layout, .mdl-layout__content
     overflow: visible
   .mdl-layout
@@ -298,25 +369,28 @@
       &--raised
         background: rgba(255, 255, 255, 0.3)
         color: white
-  .logo-img
+  .block-img
     width: 145px
     height: 145px
-  .logo-img--photo
-    width: 100%
-    height: 100%
-    border-radius: 50% 
-    background: url(assets/photo.jpg) center center no-repeat
-    background-size: 150%
-    box-shadow: 0px 11px 13px 1px rgba(0,0,0,0.14)
+    &--avatar
+      width: 45px
+      height: 45px
+    &--shadow
+      box-shadow: 0px 11px 13px 1px rgba(0,0,0,0.14)
+    &--photo
+      width: 100%
+      height: 100%
+      border-radius: 50% 
+      background: url(assets/photo.jpg) center center no-repeat
+      background-size: 150%
 
 
   .material-icons--info
-    border: 7px solid #e0e0e0
+    border: 7px solid #c9c9c9
     border-radius: 50px
-    background: #e0e0e0
+    background: #c9c9c9
     color: white
     position: relative
-    margin-right: 10px
     font-size: 28px
   .photo-block
     &__gallery
