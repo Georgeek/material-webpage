@@ -22,7 +22,7 @@
               <button class="mdl-button mdl-js-button mdl-button--raised">
                 Резюме 1
               </button>
-            </div>  
+            </div>
           </div>
         </div>
       </div>
@@ -32,7 +32,7 @@
       <div class="mdl-layout__tab-bar-container mdl-layout--large-screen-only">
         <div class="mdl-layout__tab-bar mdl-ripple-effect mdl-color--primary-dark">
           <a href="" class="mdl-layout__tab is-active">
-            <i class="material-icons">account_circle</i> <span>Главная</span>   
+            <i class="material-icons">account_circle</i> <span>Главная</span>
           </a>
           <a href="" class="mdl-layout__tab">
             <i class="material-icons">filter</i> <span>Блог</span>
@@ -60,7 +60,7 @@
         <a href="" class="mdl-navigation__link"><i class="material-icons">receipt</i><span>Контакты</span></a>
       </nav>
     </div>
-    
+
     <main class="mdl-layout__content">
       <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
@@ -180,7 +180,7 @@
                   28 августа в 13:49
                 </div>
               </div>
-              
+
             </div>
             <!-- использовать в Блоге на фотографии фоном -->
             <div class="mdl-card__media">
@@ -207,9 +207,16 @@
                 Подробнее
               </a>
               <div class="mdl-layout-spacer"></div>
-              <i class="material-icons">mode_comment</i>
-              <i class="material-icons">share</i>
-              <i class="material-icons">thumb_up</i>
+              <button class="mdl-button mdl-js-button icon-button">
+                <i class="material-icons">mode_comment</i>
+              </button>
+              <button class="mdl-button mdl-js-button icon-button">
+                <i class="material-icons">share</i>
+              </button>
+              <button class="mdl-button mdl-js-button icon-button">
+                <i class="material-icons">thumb_up</i>
+              </button>
+
             </div>
             <div class="mdl-card__menu">
               <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
@@ -247,6 +254,13 @@
   img
     width: 100%
     height: 100%
+  .icon-button
+    min-width: auto
+    width: 36px
+    padding: 0
+    & > i
+      padding: 0
+      color: rgba(48, 63, 159, .6)
   .text--black
     color: black
   .overlay
@@ -270,7 +284,7 @@
   .news-box
     &--title
       font-size: 36px
-      line-height: 22px 
+      line-height: 22px
     &--subtitle
       font-size: 21px
       line-height: 25px
@@ -281,39 +295,40 @@
 
   .info-block
     padding: 0 16px
-  .mdl-card__media
-    width: 100%
-    padding-bottom: 66.8%
-    position: relative
-    overflow: hidden
-    margin: auto
-    img
-      position: absolute
-      top: 0
-      bottom: 0
-      width: 100%
-      height: 100%
-  .mdl-card__supporting-text
-    padding: 0 0 16px
-  .mdl-card__title-text
-    align-items: center
-  .mdl-card__subtitle-text
-    &--author
-      font-weight: 600
-      color: rgba(48, 63, 159,.8)
-      margin-bottom: 5px
   .mdl-card
+    margin: 8px auto
+    &__media
+      width: 100%
+      padding-bottom: 66.8%
+      position: relative
+      overflow: hidden
+      margin: auto
+      img
+        position: absolute
+        top: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+    &__supporting-text
+      padding: 0 0 16px
+    &__title-text
+      align-items: center
+    &__subtitle-text
+      &--author
+        font-weight: 600
+        color: rgba(48, 63, 159,.8)
+        margin-bottom: 5px
     &__actions
       display: flex
       align-items: center
-      a, i
-        color: #303F9F
+      a
+        color: rgba(48, 63, 159, .6)
         padding: 0 8px
-
-  .mdl-card
-    margin: 8px auto
-    &__menu i
+    &__menu
+      top: 21px
+      i
         color: rgba(0,0,0,.44)
+
   .mdl-layout, .mdl-layout__content
     overflow: visible
   .mdl-layout
@@ -380,7 +395,7 @@
     &--photo
       width: 100%
       height: 100%
-      border-radius: 50% 
+      border-radius: 50%
       background: url(assets/photo.jpg) center center no-repeat
       background-size: 150%
 
