@@ -30,7 +30,7 @@
 
       <div class="mdl-layout__tab-bar-container mdl-layout--large-screen-only"></div>
       <div class="mdl-layout__tab-bar-container mdl-layout--large-screen-only">
-        <div class="mdl-layout__tab-bar mdl-ripple-effect mdl-color--primary-dark">
+        <!-- <div class="mdl-layout__tab-bar mdl-ripple-effect mdl-color--primary-dark">
           <a href="" class="mdl-layout__tab is-active">
             <i class="material-icons">account_circle</i> <span>Главная</span>
           </a>
@@ -46,7 +46,7 @@
           <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
             <i class="material-icons">more_vert</i>
           </button>
-        </div>
+        </div> -->
       </div>
     </header>
     <div class="mdl-layout__header-row mdl-layout--small-screen-only transparent"></div>
@@ -64,7 +64,7 @@
     <main class="mdl-layout__content">
       <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
-
+            <!-- Информационная секция -->
             <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
               <div class="mdl-card__title">
                 <div class="mdl-card__title-text">
@@ -164,9 +164,32 @@
                 </button>
               </div>
             </div>
+            <!-- КОНЕЦ Информационная секция -->
         </div>
 
-        <div class="mdl-cell mdl-cell--7-col">
+        <div class="mdl-cell mdl-cell--7-col mdl-cell--12-col-tablet mdl-cell--12-col-phone topic-block">
+          <!-- Основное меню -->
+          <div class="mdl-cell mdl-cell--12-col mdl-shadow--6dp mdl-layout--large-screen-only">
+            <div class="mdl-layout__tab-bar mdl-ripple-effect mdl-color--primary-dark">
+              <a href="" class="mdl-layout__tab is-active">
+                <i class="material-icons">account_circle</i> <span>Главная</span>
+              </a>
+              <a href="" class="mdl-layout__tab">
+                <i class="material-icons">filter</i> <span>Блог</span>
+              </a>
+              <a href="" class="mdl-layout__tab">
+                <i class="material-icons">pets</i> <span>Пече</span>
+              </a>
+              <a href="" class="mdl-layout__tab">
+                <i class="material-icons">receipt</i> <span>Контакты</span>
+              </a>
+              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--icon--menu">
+                <i class="material-icons">more_vert</i>
+              </button>
+            </div>
+          </div>
+          <!-- Конец Основного меню -->
+          <!-- Секция постов  -->
           <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--6dp">
             <div class="mdl-card__title topic-1">
               <div class="block-img--avatar">
@@ -200,21 +223,22 @@
 
             <div class="info-block">
               <h4>Какое-то эпическое название</h4>
-              <div class="mdl-card__supporting-text text--black">Краткое описание эпической темы в нескольких предложениях. Да так, чтобы я смог проверить на нескольких строчках мог проверить. Тренирую свой десятипальцевый слепой набор на русской йцукен раскладке. Пальцы пока путаются.</div>
+              <div class="mdl-card__supporting-text text--black">Краткое описание эпической темы в нескольких предложениях. Да так, чтобы я смог на нескольких строчках мог проверить. Тренирую свой десятипальцевый слепой набор на русской йцукен раскладке. Пальцы пока путаются.</div>
             </div>
             <div class="mdl-card__actions mdl-card--border">
               <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
                 Подробнее
               </a>
-              <div class="mdl-layout-spacer"></div>
               <button class="mdl-button mdl-js-button icon-button">
                 <i class="material-icons">mode_comment</i>
+                <span class="post_counter">99+</span>
               </button>
+              <div class="mdl-layout-spacer"></div>
               <button class="mdl-button mdl-js-button icon-button">
                 <i class="material-icons">share</i>
               </button>
               <button class="mdl-button mdl-js-button icon-button">
-                <i class="material-icons">thumb_up</i>
+                <i class="material-icons">thumb_up</i><span class="post_counter">99+</span>
               </button>
 
             </div>
@@ -224,7 +248,151 @@
               </button>
             </div>
           </div>
+          <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--6dp">
+            <div class="mdl-card__title topic-1">
+              <div class="block-img--avatar">
+                <div class="block-img--photo"></div>
+              </div>
+              <div class="mdl-card__subtitle-block">
+                <div class="mdl-card__subtitle-text mdl-card__subtitle-text--author">
+                  Мадьяров Егор Тимурович
+                </div>
+                <div class="mdl-card__subtitle-text">
+                  28 августа в 13:49
+                </div>
+              </div>
+
+            </div>
+            <!-- использовать в Блоге на фотографии фоном -->
+            <div class="mdl-card__media">
+              <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+              <!-- <div class="overlay middle center">
+                <div class="overlay-inside">
+                  <div>
+                    <div class="news-box--title ">Какое-то название</div>
+                    <hr>
+                    <div class="news-box--subtitle">драмматическое описание</div>
+                    <hr>
+                    <div class="news-box--copyright">какое-то авторство</div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+
+            <div class="info-block">
+              <h4>Какое-то эпическое название</h4>
+              <div class="mdl-card__supporting-text text--black">Краткое описание эпической темы в нескольких предложениях. Да так, чтобы я смог на нескольких строчках мог проверить. Тренирую свой десятипальцевый слепой набор на русской йцукен раскладке. Пальцы пока путаются.</div>
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                Подробнее
+              </a>
+              <button class="mdl-button mdl-js-button icon-button">
+                <i class="material-icons">mode_comment</i>
+                <span class="post_counter">99+</span>
+              </button>
+              <div class="mdl-layout-spacer"></div>
+              <button class="mdl-button mdl-js-button icon-button">
+                <i class="material-icons">share</i>
+              </button>
+              <button class="mdl-button mdl-js-button icon-button">
+                <i class="material-icons">thumb_up</i><span class="post_counter">99+</span>
+              </button>
+
+            </div>
+            <div class="mdl-card__menu">
+              <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                <i class="material-icons">keyboard_arrow_down</i>
+              </button>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--6dp">
+            <div class="mdl-card__title topic-1">
+              <div class="block-img--avatar">
+                <div class="block-img--photo"></div>
+              </div>
+              <div class="mdl-card__subtitle-block">
+                <div class="mdl-card__subtitle-text mdl-card__subtitle-text--author">
+                  Мадьяров Егор Тимурович
+                </div>
+                <div class="mdl-card__subtitle-text">
+                  28 августа в 13:49
+                </div>
+              </div>
+
+            </div>
+            <!-- использовать в Блоге на фотографии фоном -->
+            <div class="mdl-card__media">
+              <img src="https://ep1.pinkbike.org/p6pb15019849/p6pb15019849.jpg" alt="">
+              <!-- <div class="overlay middle center">
+                <div class="overlay-inside">
+                  <div>
+                    <div class="news-box--title ">Какое-то название</div>
+                    <hr>
+                    <div class="news-box--subtitle">драмматическое описание</div>
+                    <hr>
+                    <div class="news-box--copyright">какое-то авторство</div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+
+            <div class="info-block">
+              <h4>Какое-то эпическое название</h4>
+              <div class="mdl-card__supporting-text text--black">Краткое описание эпической темы в нескольких предложениях. Да так, чтобы я смог на нескольких строчках мог проверить. Тренирую свой десятипальцевый слепой набор на русской йцукен раскладке. Пальцы пока путаются.</div>
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                Подробнее
+              </a>
+              <button class="mdl-button mdl-js-button icon-button">
+                <i class="material-icons">mode_comment</i>
+                <span class="post_counter">99+</span>
+              </button>
+              <div class="mdl-layout-spacer"></div>
+              <button class="mdl-button mdl-js-button icon-button">
+                <i class="material-icons">share</i>
+              </button>
+              <button class="mdl-button mdl-js-button icon-button">
+                <i class="material-icons">thumb_up</i><span class="post_counter">99+</span>
+              </button>
+
+            </div>
+            <div class="mdl-card__menu">
+              <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                <i class="material-icons">keyboard_arrow_down</i>
+              </button>
+            </div>
+          </div>
+          <!-- КОНЕЦ Секция постов -->
         </div>
+
+        <div class="mdl-cell mdl-cell--1-col mdl-layout--large-screen-only">
+          <div class="pink">
+            <div class="button-block">
+              <button class="mdl-button mdl-button--icon mdl-js-button mdl-button--fab material-icons">turned_in_not</button>
+              <button class="mdl-button mdl-button--icon mdl-js-button mdl-button--fab material-icons">portrait</button>
+              <button class="mdl-button mdl-button--icon mdl-js-button mdl-button--fab material-icons">image</button>
+              <button class="mdl-button mdl-button--icon mdl-js-button mdl-button--fab material-icons btn-cta">send</button>
+
+            </div>
+            <div class="friendlist-block">
+              <div class="block-img--avatar online">
+                <div class="block-img--photo"></div>
+              </div>
+              <div class="block-img--avatar online">
+                <div class="block-img--photo"></div>
+              </div>
+              <div class="block-img--avatar">
+                <div class="block-img--photo"></div>
+              </div>
+            </div>
+            <div class="settings-block">
+              <button class="mdl-button mdl-button--icon mdl-js-button mdl-button--fab material-icons btn-cta">settings</button>
+            </div>
+          </div>
+        </div>
+
 
       </div>
     </main>
@@ -245,7 +413,54 @@
 </style>
 
 <style lang="sass">
-  body
+  .online
+    position: relative
+    &:after
+      bottom: 2%
+      right: 2%
+      border: 2px solid #fff
+      height: 8px
+      width: 8px
+    &:after
+      content: ''
+      position: absolute
+      background-color: #8ac176
+      border-radius: 50%
+
+  .pink
+    margin-top: -280px
+    // width: 100%
+    // height: 100vh
+    // background: pink
+    display: flex
+    flex-direction: column
+    align-items: center
+  .button-block
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 275px
+    .mdl-button--icon
+      font-size: 32px
+      width: 57px
+      height: 57px
+      background: #fff
+      color: #c9c9c9
+    .btn-cta
+      background: #F50057
+      color: #fff
+  .friendlist-block
+    margin: 18px 0
+    .block-img--avatar
+      margin: 15px 0
+  .settings-block
+    button
+      font-size: 36px
+      height: 45px
+      width: 45px
+      color: #a3a3a3
+      background: #eee
+  *
     font-family: 'Roboto', sans-serif
   h3
     margin: 33px 0 15px
@@ -255,12 +470,17 @@
     width: 100%
     height: 100%
   .icon-button
+    margin-left: 10px
     min-width: auto
-    width: 36px
+    width: auto
     padding: 0
-    & > i
+    & > i, .post_counter
       padding: 0
+      margin-right: 3px
       color: rgba(48, 63, 159, .6)
+    // & > .post_counter
+  .topic-block
+    margin-top: -73px
   .text--black
     color: black
   .overlay
@@ -295,6 +515,12 @@
 
   .info-block
     padding: 0 16px
+  .mdl-button--icon--menu
+    position: absolute
+    top: 20px
+    right: 17px
+    margin-right: 0
+    color: rgba(255, 255, 255, .6)
   .mdl-card
     margin: 8px auto
     &__media
@@ -340,13 +566,12 @@
       background: url(assets/bg.jpg) center no-repeat
       background-size: cover
       border-top: 4px solid #303f9f
+      z-index: 0
     &__tab-bar
       height: 72px
       padding: 0
+      position: relative
       overflow: visible
-      position: absolute
-      top: 35px
-      right: 13%
       width: auto
       box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12)
     &__header-row
@@ -357,16 +582,14 @@
       background: rgba(101, 115, 242, .3)
       overflow: visible
       height: 72px
-      .mdl-button--icon
-        position: relative
-        top: 20px
-        margin-right: 20px
+
     &__tab
       height: 100%
       line-height: 25px
       display: flex
       flex-direction: column
-      padding: 0 38px
+      width: 22.5%
+      padding: 0
       i
         padding-top: 15px
     &.is-upgraded &__tab.is-active::after
@@ -387,6 +610,9 @@
   .block-img
     width: 145px
     height: 145px
+    &--button
+      width: 57px
+      height: 57px
     &--avatar
       width: 45px
       height: 45px
@@ -433,12 +659,17 @@
 
 
   @media screen and (max-width: 1024px)
-    .mdl-layout__header
-      display: block
-    .mdl-layout__header-row
-      padding: 0
-    .mdl-layout__drawer-button
-      color: #fff
+    .mdl-layout
+      &__header
+        display: block
+      &__header-row
+        padding: 0
+      &__drawer-button
+        color: #fff
+      &__content
+        padding: 40px 0 0 0
+    .topic-block
+      margin-top: 8px
     .person__block
       flex-direction: column
       align-items: center
@@ -463,7 +694,5 @@
     .logo-img--photo
       box-shadow: 0px 11px 13px 1px rgba(0,0,0,0.14)
 
-    .mdl-layout__content
-      padding: 40px 0 0 0
 </style>
 
