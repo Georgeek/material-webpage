@@ -53,6 +53,9 @@
     <div class="mdl-layout__header-row mdl-layout--small-screen-only transparent"></div>
     <!-- mobile nav -->
     <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+      <div class="mdl-card__title">
+        <h1 class="mdl-card__title-text">Меню</h1>
+      </div>
       <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
         <a href="" class="mdl-navigation__link"><i class="material-icons">account_circle</i><span>Главная</span></a>
         <a href="" class="mdl-navigation__link"><i class="material-icons">filter</i><span>Блог</span></a>
@@ -170,7 +173,7 @@
         <div class="mdl-cell mdl-cell--7-col mdl-cell--12-col-tablet mdl-cell--12-col-phone topic-block">
           <!-- Основное меню -->
           <div class="mdl-cell mdl-cell--12-col mdl-shadow--6dp mdl-layout--large-screen-only">
-            <div class="mdl-layout__tab-bar mdl-ripple-effect mdl-color--primary-dark">
+            <div class="mdl-layout__tab-bar mdl-ripple-effect">
               <a href="" class="mdl-layout__tab is-active">
                 <i class="material-icons">account_circle</i> <span>Главная</span>
               </a>
@@ -203,7 +206,6 @@
                   28 августа в 13:49
                 </div>
               </div>
-
             </div>
             <!-- использовать в Блоге на фотографии фоном -->
             <div class="mdl-card__media">
@@ -392,10 +394,9 @@
             </div>
           </div>
         </div>
-
-
       </div>
     </main>
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-button--fab material-icons btn-cta btn-absolute">send</button>
   </div>
 </template>
 
@@ -429,12 +430,22 @@
 
   .pink
     margin-top: -280px
-    // width: 100%
-    // height: 100vh
-    // background: pink
     display: flex
     flex-direction: column
     align-items: center
+  .btn-absolute
+    font-size: 32px
+    width: 57px
+    height: 57px
+    top: 0
+    right: 0
+    background: #F50057
+    color: #fff
+    position: fixed
+    top: 200px
+    right: 55px
+    z-index: 3
+    display: none
   .button-block
     display: flex
     flex-direction: column
@@ -520,7 +531,7 @@
     top: 20px
     right: 17px
     margin-right: 0
-    color: rgba(255, 255, 255, .6)
+    color: #3f51b5
   .mdl-card
     margin: 8px auto
     &__media
@@ -567,6 +578,10 @@
       background-size: cover
       border-top: 4px solid #303f9f
       z-index: 0
+    &__tab-bar-container
+      background: rgba(101, 115, 242, .3)
+      overflow: visible
+      height: 72px
     &__tab-bar
       height: 72px
       padding: 0
@@ -574,14 +589,12 @@
       overflow: visible
       width: auto
       box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12)
+      background: white
+
     &__header-row
       background: rgba(101, 115, 242, .3)
     .transparent
       background: transparent
-    &__tab-bar-container
-      background: rgba(101, 115, 242, .3)
-      overflow: visible
-      height: 72px
 
     &__tab
       height: 100%
@@ -590,12 +603,15 @@
       flex-direction: column
       width: 22.5%
       padding: 0
+      color: #3f51b5
+      &.is-active
+        color: #3f51b5 !important
       i
         padding-top: 15px
-    &.is-upgraded &__tab.is-active::after
-      background: white
-      height: 5px
 
+    &.is-upgraded &__tab.is-active::after
+      background: #3f51b5
+      height: 5px
   .person__block
     display: flex
     flex-direction: row
@@ -668,6 +684,10 @@
         color: #fff
       &__content
         padding: 40px 0 0 0
+    .mdl-navigation__link
+      border-bottom: 1px solid rgba(0,0,0,.1)
+      i
+        margin-right: 15px
     .topic-block
       margin-top: 8px
     .person__block
@@ -693,6 +713,13 @@
           box-shadow: none
     .logo-img--photo
       box-shadow: 0px 11px 13px 1px rgba(0,0,0,0.14)
+    .btn-absolute
+      display: block
+  @media (max-width: 426px)
+    .btn-absolute
+      display: block
+      top: 404px
+      right: 25px
 
 </style>
 
